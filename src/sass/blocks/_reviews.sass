@@ -1,0 +1,77 @@
+.reviews
+  width: 100%
+  margin-bottom: 170px
+  &__title
+    font-style: normal
+    font-weight: 400
+    font-size: 40px
+    line-height: 43px
+    color: $text-color
+    text-align: center
+    margin-bottom: 60px
+  &__slider
+    background-color: $secondary
+    width: 100%
+    display: flex
+    align-items: center
+  &__image
+    flex-basis: 50%
+    width: 50%
+    display: block
+    overflow: hidden
+    &-image 
+      width: 100%
+  &__text
+    margin-left: 67px
+    width: 526px
+    flex-shrink: 0,5
+    &::after 
+      content: ""
+      position: absolute
+      top: 41px
+      left: 87%
+      width: 145px
+      height: 130px
+      background-image: url(../img/quote.svg)
+      background-repeat: no-repeat
+      opacity: 0.05
+    &-feedback
+      font-style: normal
+      font-weight: 400
+      font-size: 24px
+      line-height: 150%
+      color: $text-color
+      margin-bottom: 20px
+      margin-top: 0
+      margin-right: 0
+    &-name
+      margin-left: 437px
+      font-style: normal
+      font-weight: 400
+      font-size: 17px
+      line-height: 150%
+  &__swiper
+    width: 100%
+    overflow: hidden
+    &-button
+      position: relative
+      left: 234px
+      bottom: 80px
+      display: flex
+      justify-content: space-between
+      margin: auto
+      width: 140px
+      &-prev
+        position: relative
+        width: 60px
+        height: 18px
+        right: -30%
+        color: transparent
+        background-image: url(../img/arrow-prev.svg)
+      &-next
+        position: relative
+        width: 60px
+        height: 18px
+        right: -30%
+        color: transparent
+        background-image: url(../img/arrow-next.svg)

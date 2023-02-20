@@ -457,6 +457,7 @@ template {
   text-align: center;
   margin-top: 0;
   margin-bottom: 60px;
+  color: #212121;
 }
 .advantages__info {
   display: flex;
@@ -497,7 +498,9 @@ template {
   font-size: 40px;
   line-height: 43px;
   text-align: center;
-  padding-bottom: 63px;
+  margin-top: 0;
+  margin-bottom: 63px;
+  color: #212121;
 }
 .grow__image {
   width: 1216px;
@@ -508,4 +511,230 @@ template {
   width: 100%;
   height: 100%;
   mix-blend-mode: darken;
+}
+
+.products {
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+.products__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 43px;
+  color: #212121;
+  margin-bottom: 60px;
+  margin-top: 0;
+  text-align: center;
+}
+.products__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.products__card-image {
+  display: block;
+  margin-bottom: 20px;
+}
+.products__card-name {
+  flex-wrap: wrap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+.products__card-price {
+  flex-basis: 100%;
+  margin-bottom: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000;
+  opacity: 0.6;
+}
+.products__button {
+  background-color: #6E7547;
+  color: #FFFFFF;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+.products__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reviews {
+  width: 100%;
+  margin-bottom: 170px;
+}
+.reviews__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 43px;
+  color: #212121;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.reviews__slider {
+  background-color: #FCF8F0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.reviews__image {
+  flex-basis: 50%;
+  width: 50%;
+  display: block;
+  overflow: hidden;
+}
+.reviews__image-image {
+  width: 100%;
+}
+.reviews__text {
+  margin-left: 67px;
+  width: 526px;
+  flex-shrink: 0, 5;
+}
+.reviews__text::after {
+  content: "";
+  position: absolute;
+  top: 41px;
+  left: 87%;
+  width: 145px;
+  height: 130px;
+  background-image: url(../img/quote.svg);
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+.reviews__text-feedback {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #212121;
+  margin-bottom: 20px;
+  margin-top: 0;
+  margin-right: 0;
+}
+.reviews__text-name {
+  margin-left: 437px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+}
+.reviews__swiper {
+  width: 100%;
+  overflow: hidden;
+}
+.reviews__swiper-button {
+  position: relative;
+  left: 234px;
+  bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 140px;
+}
+.reviews__swiper-button-prev {
+  position: relative;
+  width: 60px;
+  height: 18px;
+  right: -30%;
+  color: transparent;
+  background-image: url(../img/arrow-prev.svg);
+}
+.reviews__swiper-button-next {
+  position: relative;
+  width: 60px;
+  height: 18px;
+  right: -30%;
+  color: transparent;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.contact__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 43px;
+  text-align: center;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.contact__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FCF8F0;
+}
+.contact__image {
+  width: 50%;
+}
+.contact__image-image {
+  width: 100%;
+}
+.contact__questions {
+  width: 595px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.contact__questions-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: left;
+}
+.contact__questions-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact__input {
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #6E7547;
+  opacity: 0.5;
+  padding-bottom: 8px;
+  margin-bottom: 27px;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+}
+.contact__input-name {
+  flex-basis: 35%;
+}
+.contact__input-email {
+  flex-basis: 60%;
+}
+.contact__input-message {
+  flex-basis: 100%;
+}
+.contact__button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/arrow-next.svg);
+  width: 60px;
+  height: 18px;
+  left: 87%;
 }/*# sourceMappingURL=style.css.map */

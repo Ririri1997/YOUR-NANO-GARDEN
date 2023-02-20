@@ -5,22 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Neno Garden</title>
-  <link rel="stylesheet" href="sass/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sass/swiper-bundle.min.css">
+  <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__wrapper">
-      <a href="#" class="header__link"><img class="header__logo" src="icons/logo.svg" alt="logo"></a>
-      <ul class="header__navigation"> 
-        <li class="header__navigation-item"><a href="#" class="header__link">How it works</a> </li>
-        <li class="header__navigation-item"><a href="#" class="header__link">Gardens</a> </li>
-        <li class="header__navigation-item"><a href="#" class="header__link">Reviews</a></li>
-        <li class="header__navigation-item"><a href="#" class="header__link">Contact Us</a></li>
-      </ul>
-      <a href="#" class="header__link"><img class="header__shopping" src="icons/shopping-bag.svg" alt="icons: shopping-bag"></a>
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="header__link"><img class="header__logo" src="icons/logo.svg" alt="logo"></a>
+        <ul class="header__navigation"> 
+          <li class="header__navigation-item"><a href="#" class="header__link">How it works</a> </li>
+          <li class="header__navigation-item"><a href="#" class="header__link">Gardens</a> </li>
+          <li class="header__navigation-item"><a href="#" class="header__link">Reviews</a></li>
+          <li class="header__navigation-item"><a href="#" class="header__link">Contact Us</a></li>
+        </ul>
+        <a href="#" class="header__link"><img class="header__shopping" src="icons/shopping-bag.svg" alt="icons: shopping-bag"></a>
+      </div>
     </div>
   </header>
   <section class="banner">
@@ -76,11 +79,152 @@
     <div class="container">
       <h2 class="grow__title">What can be grown in Smart Garden</h2>
       <div class="grow__image">
-        <img src="img/vegitables.png" class="grow__image-vegitables" alt="">
+        <img src="img/vegitables.png" class="grow__image-vegitables" alt="image vegitables">
       </div>
-
     </div>
   </section>
   <!-- /.grow -->
+  <section class="products">
+    <div class="container">
+      <h2 class="products__title">Our super gardens and indoor vegetable gardens</h2>
+      <div class="products__cards">
+        <a href="#" class="products__link">
+          <div class="products__card">
+            <img src="img/products-card/products-1.jpg" alt="image products" class="products__card-image">
+            <span class="products__card-name">Nano Garden TerraCotta</span>
+            <span class="products__card-price">€149,99 EUR</span>
+          </div>
+        </a>
+        <!-- ./products__card -->
+        <a href="#" class="products__link">
+          <div class="products__card">
+            <img src="img/products-card/products-2.jpg" alt="image products" class="products__card-image">
+            <span class="products__card-name">Nano Garden Mimosa Yellow</span>
+            <span class="products__card-price">€109,99 EUR</span>
+          </div>
+        </a> <!-- ./products__card -->
+        <a href="#" class="products__link">
+          <div class="products__card">
+            <img src="img/products-card/products-3.jpg" alt="image products" class="products__card-image">
+            <span class="products__card-name">Nano Garden Forest Green</span>
+            <span class="products__card-price">€99,99 EUR</span>
+          </div>
+          </a>
+        <!-- ./products__card -->
+        <a href="#" class="products__link">
+          <div class="products__card">
+            <img src="img/products-card/products-4.jpg" alt="image products" class="products__card-image">
+            <span class="products__card-name">Nano Garden Rose Quartz</span>
+            <span class="products__card-price">119,99 EUR</span>
+          </div>
+        </a>
+        <!-- ./products__card -->
+        <a href="#" class="products__link">
+          <div class="products__card">
+            <img src="img/products-card/products-5.jpg" alt="image products" class="products__card-image">
+            <span class="products__card-name">Nano Garden Celadon Green</span>
+            <span class="products__card-price">€79,99 EUR</span>
+            </div>
+          </a>
+        <!-- ./products__card -->
+        <a href="#" class="products__link">
+          <div class="products__card">
+            <img src="img/products-card/products-6.jpg" alt="image products" class="products__card-image">
+            <span class="products__card-name">Nano Garden Sand Gray</span>
+            <span class="products__card-price">€89,99 EUR</span>
+          </div>
+        </a>
+        <!-- ./products__card -->
+      </div>
+      <button class="button products__button">View all</button>
+      <!-- /.products__cards -->
+    </div>
+  </section>
+  <!-- /.products -->
+  <section class="reviews">
+    <h2 class="reviews__title">What Our Customers Say</h2> 
+    <div class="slider">
+      <div class="reviews__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><div class="reviews__slider">
+            <div class="reviews__image">
+            <img src="img/reviews.jpg" alt="Reviews image" class="reviews__image-image">
+            </div>
+            <div class="reviews__text">
+            <p class="reviews__text-feedback">I am a huge fan of Hydroponics, I myself have one at home and I love it. It is very cool to see plants growing in front of you, inch by inch.</p>
+            <p class="reviews__text-feedback">And I found the germination rate is higher compared to traditional soil-based. While I was at CES this year, I came across this beautiful indoor garden that is aquaponic based. </p>
+            <span class="reviews__text-name">Anna Lorens</span>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><div class="reviews__slider">
+            <div class="reviews__image">
+            <img src="img/reviews.jpg" alt="Reviews image" class="reviews__image-image">
+            </div>
+            <div class="reviews__text">
+            <p class="reviews__text-feedback">I am a huge fan of Hydroponics, I myself have one at home and I love it. It is very cool to see plants growing in front of you, inch by inch.</p>
+            <p class="reviews__text-feedback">And I found the germination rate is higher compared to traditional soil-based. While I was at CES this year, I came across this beautiful indoor garden that is aquaponic based. </p>
+            <span class="reviews__text-name">Anna Lorens</span>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-slide"><div class="reviews__slider">
+            <div class="reviews__image">
+            <img src="img/reviews.jpg" alt="Reviews image" class="reviews__image-image">
+            </div>
+            <div class="reviews__text">
+            <p class="reviews__text-feedback">I am a huge fan of Hydroponics, I myself have one at home and I love it. It is very cool to see plants growing in front of you, inch by inch.</p>
+            <p class="reviews__text-feedback">And I found the germination rate is higher compared to traditional soil-based. While I was at CES this year, I came across this beautiful indoor garden that is aquaponic based. </p>
+            <span class="reviews__text-name">Anna Lorens</span>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="reviews__swiper-button">
+          <div class="reviews__swiper-button-prev swiper-button-prev"></div>
+          <div class="reviews__swiper-button-next swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.reviews -->
+  <section class="contact">
+    <h2 class="contact__title">Contact Us</h2>
+    <div class="contact__wrapper">
+      <div class="contact__questions">
+        <h3 class="contact__questions-title">Have questions?</h3>
+        <form action="" class="contact__questions-details">
+            <input 
+            type="text" 
+            class="contact__input contact__input-name" placeholder="name"
+            name="name"
+            required
+            minlength="2"
+            >
+            <input 
+              type="email"
+              class="contact__input contact__input-email" placeholder="email"
+              name="email"
+              required>
+            <input
+            class="contact__input  message contact__input-message" placeholder="Message"
+            name="message"></input>
+            <button class="contact__button" type="submit"></button>
+        </form>
+        <!-- /.contact__guestions-details -->
+      </div>
+      <div class="contact__image">
+        <img src="img/contact-wrapper.jpg" alt="" class="contact__image-image">
+      </div>
+
+    </div>
+    <!-- /.contact__wrapper -->
+  </section>
+  <!-- /.contact -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
