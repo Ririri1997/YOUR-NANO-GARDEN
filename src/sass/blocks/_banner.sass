@@ -2,7 +2,7 @@
  &__about
   max-width: 670px
   padding-top: 84px
-  height: 699px
+  padding-bottom: 50px
   &-title
    display: flex
    &-dark
@@ -34,6 +34,12 @@
     top: 61px
     &-image
       position: relative
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      object-fit: cover
  &__buttons
   margin-bottom: 61px 
   &-reservation
@@ -42,11 +48,21 @@
    margin-right: 20px
   &-detail
    color: $primary
-  &-showcase
+  &__showcase
+    position: relative
     width: 446px
     height: 639px
+    &-image
+      position: relative
+      width: 100%
+      object-fit: cover
+      top: 0
+      right: 0
+      left: 0
+      bottom: 0
 .wrapper
- display: flex
- justify-content: space-between
+  width: 100%
+  display: flex
+  justify-content: space-between
 
 

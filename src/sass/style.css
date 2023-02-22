@@ -28,6 +28,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -385,7 +386,7 @@ template {
 .banner__about {
   max-width: 670px;
   padding-top: 84px;
-  height: 699px;
+  padding-bottom: 50px;
 }
 .banner__about-title {
   display: flex;
@@ -423,6 +424,13 @@ template {
 }
 .banner__about-garden-image {
   position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .banner__buttons {
   margin-bottom: 61px;
@@ -435,19 +443,30 @@ template {
 .banner__buttons-detail {
   color: #6E7547;
 }
-.banner__buttons-showcase {
+.banner__buttons__showcase {
+  position: relative;
   width: 446px;
   height: 639px;
 }
+.banner__buttons__showcase-image {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 
 .wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .advantages {
   padding-top: 160px;
-  padding-bottom: 160px;
 }
 .advantages__title {
   font-style: normal;
@@ -463,16 +482,14 @@ template {
   display: flex;
   justify-content: space-between;
 }
-
-.card {
+.advantages__card {
   width: 386px;
 }
-.card-image {
-  width: 386px;
-  height: 380px;
+.advantages__card-image {
+  width: 100%;
   margin-bottom: 25px;
 }
-.card-title {
+.advantages__card-title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -480,7 +497,7 @@ template {
   line-height: 150%;
   margin-bottom: 10px;
 }
-.card-text {
+.advantages__card-text {
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -503,8 +520,7 @@ template {
   color: #212121;
 }
 .grow__image {
-  width: 1216px;
-  height: 700px;
+  width: 100%;
   margin: auto;
 }
 .grow__image-vegitables {
@@ -528,19 +544,44 @@ template {
   text-align: center;
 }
 .products__cards {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 .products__card {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  text-decoration: none;
+  color: #000;
+}
+.products__card-1 {
+  grid-column: 1/5;
+}
+.products__card-2 {
+  grid-column: 5/7;
+}
+.products__card-3 {
+  grid-column: 7/9;
+}
+.products__card-4 {
+  grid-column: 1/3;
+}
+.products__card-5 {
+  grid-column: 3/5;
+}
+.products__card-6 {
+  grid-column: 5/9;
 }
 .products__card-image {
   display: block;
   margin-bottom: 20px;
+  width: 100%;
 }
 .products__card-name {
   flex-wrap: wrap;
@@ -553,14 +594,13 @@ template {
   color: black;
 }
 .products__card-price {
-  flex-basis: 100%;
-  margin-bottom: 6px;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
   color: #000;
   opacity: 0.6;
+  margin-bottom: 0;
 }
 .products__button {
   background-color: #6E7547;
@@ -665,6 +705,9 @@ template {
   background-image: url(../img/arrow-next.svg);
 }
 
+.contact {
+  margin-bottom: 170px;
+}
 .contact__title {
   font-style: normal;
   font-weight: 400;
@@ -737,4 +780,405 @@ template {
   width: 60px;
   height: 18px;
   left: 87%;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #FCF8F0;
+  padding: 120px 0;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.footer__contact-item {
+  margin-bottom: 15px;
+}
+.footer__contact-item:last-child {
+  margin-bottom: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: #212121;
+}
+.footer__logo {
+  width: 238px;
+  height: 90px;
+}
+.footer__social-facebook {
+  width: 32px;
+  height: 32px;
+}
+.footer__social-twitter {
+  width: 32px;
+  height: 32px;
+}
+.footer__social-telegram {
+  width: 32px;
+  height: 32px;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 136px;
+}
+.footer__social-follows {
+  flex-basis: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1492x) {
+  .container {
+    width: 90%;
+  }
+  .header__wrapper {
+    max-height: 70px;
+    margin-bottom: 70px;
+  }
+  .header__logo {
+    width: 130px;
+  }
+  .header__navigation-item {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .header__shopping {
+    width: 20px;
+  }
+  .banner__about {
+    max-width: 600px;
+    padding-top: 50px;
+  }
+  .banner__about-title-dark {
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+  }
+  .banner__about-title-primary {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #6E7547;
+  }
+  .banner__about-text {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .banner__about-garden {
+    top: 0;
+    width: 400px;
+  }
+  .banner__about-garden-image {
+    width: 100%;
+  }
+  .banner__showcase {
+    width: 400px;
+  }
+  .banner__showcase-image {
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .advantages__title {
+    margin-bottom: 50px;
+  }
+  .advantages__card {
+    width: 32%;
+  }
+  .advantages__card-image {
+    margin-bottom: 25px;
+  }
+  .advantages__card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .advantages__card-text {
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .grow {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .grow__image {
+    width: 80%;
+  }
+  .products {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .products__card {
+    margin-bottom: 25px;
+  }
+  .products__card-big {
+    width: 578px;
+  }
+  .products__card-image {
+    margin-bottom: 15px;
+  }
+  .products__card-name {
+    font-size: 18px;
+  }
+  .products__card-price {
+    font-size: 15px;
+  }
+  .reviews__text {
+    margin-left: 50px;
+    width: 500px;
+  }
+  .reviews__text-feedback {
+    font-size: 18px;
+  }
+  .reviews__text-name {
+    margin-left: 400px;
+    font-size: 15px;
+  }
+  .reviews__swiper-button {
+    position: relative;
+    left: 164px;
+    bottom: 32px;
+    width: 150px;
+  }
+  .reviews__swiper-button-prev {
+    position: relative;
+    width: 60px;
+    height: 18px;
+    right: -30%;
+  }
+  .reviews__swiper-button-next {
+    position: relative;
+    width: 60px;
+    height: 18px;
+    right: -30%;
+  }
+  .footer {
+    background-color: #FCF8F0;
+    padding: 70px 0;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__contact {
+    font-size: 22px;
+  }
+  .footer__contact-item {
+    margin-bottom: 10px;
+  }
+  .footer__contact-item:last-child {
+    margin-bottom: 0;
+  }
+  .footer__logo {
+    width: 220px;
+  }
+  .footer__social {
+    width: 130px;
+  }
+  .footer__social-follows {
+    font-size: 20px;
+  }
+  .footer__social-facebook {
+    width: 30px;
+    height: 30px;
+  }
+  .footer__social-twitter {
+    width: 30px;
+    height: 30px;
+  }
+  .footer__social-telegram {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+  .header__wrapper {
+    max-height: 70px;
+    margin-bottom: 70px;
+    justify-content: space-between;
+  }
+  .header__logo {
+    width: 130px;
+    margin-right: 0;
+  }
+  .header__navigation {
+    margin-right: 0;
+  }
+  .header__navigation-item {
+    font-size: 20px;
+    line-height: 15px;
+    margin-right: 20px;
+  }
+  .header__navigation-item:last-child {
+    margin-right: 0;
+  }
+  .banner__about {
+    max-width: 550px;
+    padding-top: 50px;
+  }
+  .banner__about-title-dark {
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+  }
+  .banner__about-title-primary {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #6E7547;
+  }
+  .banner__about-text {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .banner__about-garden {
+    top: 0;
+    left: 117px;
+    width: 336px;
+    bottom: 0px;
+  }
+  .banner__showcase {
+    width: 300px;
+    right: 0;
+  }
+  .buttons {
+    margin-bottom: 20px;
+  }
+  .advantages {
+    padding-bottom: 50px;
+  }
+  .advantages__card {
+    width: 32%;
+  }
+  .advantages__card-image {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .advantages__card-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .advantages__card-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .grow {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .products {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .products__card {
+    margin-bottom: 15px;
+  }
+  .products__card-image {
+    margin-bottom: 10px;
+  }
+  .products__card-name {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .products__card-price {
+    font-size: 15px;
+  }
+  .products__button {
+    margin-top: 12px;
+  }
+  .reviews__text {
+    margin-left: 50px;
+    width: 500px;
+  }
+  .reviews__text-feedback {
+    font-size: 18px;
+  }
+  .reviews__text-name {
+    margin-left: 400px;
+    font-size: 15px;
+  }
+  .reviews__swiper-button {
+    position: relative;
+    left: 164px;
+    bottom: 32px;
+    width: 150px;
+  }
+  .reviews__swiper-button-prev {
+    position: relative;
+    width: 60px;
+    height: 18px;
+    right: -30%;
+  }
+  .reviews__swiper-button-next {
+    position: relative;
+    width: 60px;
+    height: 18px;
+    right: -30%;
+  }
+  .footer {
+    background-color: #FCF8F0;
+    padding: 70px 0;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer__contact {
+    font-size: 22px;
+  }
+  .footer__contact-item {
+    margin-bottom: 10px;
+  }
+  .footer__contact-item:last-child {
+    margin-bottom: 0;
+  }
+  .footer__logo {
+    width: 220px;
+  }
+  .footer__social {
+    width: 130px;
+  }
+  .footer__social-follows {
+    font-size: 20px;
+  }
+  .footer__social-facebook {
+    width: 30px;
+    height: 30px;
+  }
+  .footer__social-twitter {
+    width: 30px;
+    height: 30px;
+  }
+  .footer__social-telegram {
+    width: 30px;
+    height: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

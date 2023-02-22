@@ -42,8 +42,8 @@
           <div class="banner__about-garden"><img src="img/garden.png" class="banner__about-garden-image" alt="garden">
           </div>
         </div>
-        <div class="banner-showcase">
-        <img src="img/showcase.png" alt="showcase">
+        <div class="banner__showcase">
+        <img src="img/showcase.png" class="banner__showcase-image" alt="showcase">
       </div>
       </div>
     </div>
@@ -53,22 +53,22 @@
     <div class="container">
       <h2 class="advantages__title">What is a Nano Garden for</h2>
       <div class="advantages__info">
-        <div class="card">
-          <img src="img/card-image-1.jpg" alt="" class="card-image">
-          <span class="card-title">Eco-friendly products 365 days a year</span>
-          <p class="card-text">Fresh, natural berries, vegetables and herbs <br> will be on your table all year round</p>
+        <div class="advantages__card">
+          <img src="img/card-image-1.jpg" alt="" class="advantages__card-image">
+          <span class="advantages__card-title">Eco-friendly products 365 days a year</span>
+          <p class="advantages__card-text">Fresh, natural berries, vegetables and herbs <br> will be on your table all year round</p>
         </div>
         <!-- ./card -->
-        <div class="card">
-          <img src="img/card-image-2.jpg" alt="" class="card-image">
-          <span class="card-title">Landscaping of the home space</span>
-          <p class="card-text">You can grow different crops that will decorate <br> the house and create an atmosphere of comfort</p>
+        <div class="advantages__card">
+          <img src="img/card-image-2.jpg" alt="" class="advantages__card-image">
+          <span class="advantages__card-title">Landscaping of the home space</span>
+          <p class="advantages__card-text">You can grow different crops that will decorate <br> the house and create an atmosphere of comfort</p>
         </div>
         <!-- ./card -->
-        <div class="card">
-          <img src="img/card-image-3.jpg" alt="" class="card-image">
-          <span class="card-title">Improving the quality of nutrition</span>
-          <p class="card-text">Smart systems — are a new look at healthy eating</p>
+        <div class="advantages__card">
+          <img src="img/card-image-3.jpg" alt="" class="advantages__card-image">
+          <span class="advantages__card-title">Improving the quality of nutrition</span>
+          <p class="advantages__card-text">Smart systems — are a new look at healthy eating</p>
         </div>
         <!-- ./card -->
       </div>
@@ -88,52 +88,41 @@
     <div class="container">
       <h2 class="products__title">Our super gardens and indoor vegetable gardens</h2>
       <div class="products__cards">
-        <a href="#" class="products__link">
-          <div class="products__card">
-            <img src="img/products-card/products-1.jpg" alt="image products" class="products__card-image">
+          <a href="#" class="products__card products__card-1">
+            <img src="img/products-card/products-1.jpg" alt="image products " class="products__card-image ">
             <span class="products__card-name">Nano Garden TerraCotta</span>
             <span class="products__card-price">€149,99 EUR</span>
-          </div>
-        </a>
+          </a>
         <!-- ./products__card -->
-        <a href="#" class="products__link">
-          <div class="products__card">
+          <a href="#" class="products__card products__card-2">
             <img src="img/products-card/products-2.jpg" alt="image products" class="products__card-image">
             <span class="products__card-name">Nano Garden Mimosa Yellow</span>
             <span class="products__card-price">€109,99 EUR</span>
-          </div>
-        </a> <!-- ./products__card -->
-        <a href="#" class="products__link">
-          <div class="products__card">
+          </a>
+ <!-- ./products__card -->
+          <a href="#" class="products__card products__card-3">
             <img src="img/products-card/products-3.jpg" alt="image products" class="products__card-image">
             <span class="products__card-name">Nano Garden Forest Green</span>
             <span class="products__card-price">€99,99 EUR</span>
-          </div>
           </a>
         <!-- ./products__card -->
-        <a href="#" class="products__link">
-          <div class="products__card">
+          <a href="#" class="products__card products__card-4">
             <img src="img/products-card/products-4.jpg" alt="image products" class="products__card-image">
             <span class="products__card-name">Nano Garden Rose Quartz</span>
             <span class="products__card-price">119,99 EUR</span>
-          </div>
-        </a>
+          </a>
         <!-- ./products__card -->
-        <a href="#" class="products__link">
-          <div class="products__card">
+          <a href="#" class="products__card products__card-5">
             <img src="img/products-card/products-5.jpg" alt="image products" class="products__card-image">
             <span class="products__card-name">Nano Garden Celadon Green</span>
             <span class="products__card-price">€79,99 EUR</span>
-            </div>
           </a>
         <!-- ./products__card -->
-        <a href="#" class="products__link">
-          <div class="products__card">
+          <a href="#" class="products__card products__card-6">
             <img src="img/products-card/products-6.jpg" alt="image products" class="products__card-image">
             <span class="products__card-name">Nano Garden Sand Gray</span>
             <span class="products__card-price">€89,99 EUR</span>
-          </div>
-        </a>
+          </a>
         <!-- ./products__card -->
       </div>
       <button class="button products__button">View all</button>
@@ -219,11 +208,38 @@
       <div class="contact__image">
         <img src="img/contact-wrapper.jpg" alt="" class="contact__image-image">
       </div>
-
     </div>
     <!-- /.contact__wrapper -->
   </section>
   <!-- /.contact -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <ul class="footer__contact">
+          <li class="footer__contact-item"><a href="#" class="footer__link">How it works</a></li>
+          <li class="footer__contact-item"><a href="#" class="footer__link">Gardens</a></li>
+          <li class="footer__contact-item"><a href="#" class="footer__link">Reviews</a></li>
+        </ul>
+        <!-- /.footer__contact -->
+        <a href="#" class="footer__link">
+          <img src="img/footer-logo.svg" alt="Footer logo" class="footer__logo"></a>
+        <div class="footer__social">
+          <span class="footer__social-follows">Follow us</span>
+          <a href="#" class="footer__link">
+            <img src="icons/Facebook.svg" alt="logo: facebook" class="footer__social-facebook">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="icons/Twitter.svg" alt="logo: twitter" class="footer__social-twitter">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="icons/Telegram.svg" alt="logo: telegram" class="footer__social-telegram">
+          </a>
+        </div>
+        <!-- /.footer__social -->
+      </div>
+    </div>
+
+  </footer>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
