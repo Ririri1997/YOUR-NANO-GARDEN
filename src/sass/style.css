@@ -419,7 +419,7 @@ template {
 }
 .banner__about-garden {
   position: relative;
-  left: 321px;
+  left: 161px;
   top: 61px;
 }
 .banner__about-garden-image {
@@ -669,7 +669,8 @@ template {
   margin-right: 0;
 }
 .reviews__text-name {
-  margin-left: 437px;
+  float: right;
+  margin-left: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -844,7 +845,7 @@ template {
   margin-bottom: 20px;
 }
 
-@media (max-width: 1492x) {
+@media (max-width: 1492px) {
   .container {
     width: 90%;
   }
@@ -899,8 +900,7 @@ template {
     justify-content: space-between;
   }
   .advantages {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding: 70px 0;
   }
   .advantages__title {
     margin-bottom: 50px;
@@ -933,9 +933,6 @@ template {
   .products__card {
     margin-bottom: 25px;
   }
-  .products__card-big {
-    width: 578px;
-  }
   .products__card-image {
     margin-bottom: 15px;
   }
@@ -953,8 +950,8 @@ template {
     font-size: 18px;
   }
   .reviews__text-name {
-    margin-left: 400px;
-    font-size: 15px;
+    float: right;
+    margin-left: 0;
   }
   .reviews__swiper-button {
     position: relative;
@@ -974,23 +971,18 @@ template {
     height: 18px;
     right: -30%;
   }
+  .contact__questions {
+    width: 500px;
+  }
   .footer {
     background-color: #FCF8F0;
-    padding: 70px 0;
-  }
-  .footer-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 50px 0;
   }
   .footer__contact {
     font-size: 22px;
   }
   .footer__contact-item {
     margin-bottom: 10px;
-  }
-  .footer__contact-item:last-child {
-    margin-bottom: 0;
   }
   .footer__logo {
     width: 220px;
@@ -1059,7 +1051,7 @@ template {
   }
   .banner__about-garden {
     top: 0;
-    left: 117px;
+    left: 166px;
     width: 336px;
     bottom: 0px;
   }
@@ -1114,54 +1106,40 @@ template {
     margin-top: 12px;
   }
   .reviews__text {
-    margin-left: 50px;
-    width: 500px;
-  }
-  .reviews__text-feedback {
-    font-size: 18px;
+    margin-left: 40px;
+    width: 40%;
   }
   .reviews__text-name {
-    margin-left: 400px;
-    font-size: 15px;
+    float: right;
+    margin-left: 0;
   }
   .reviews__swiper-button {
-    position: relative;
-    left: 164px;
-    bottom: 32px;
-    width: 150px;
+    bottom: 15px;
   }
-  .reviews__swiper-button-prev {
-    position: relative;
-    width: 60px;
-    height: 18px;
-    right: -30%;
+  .contact {
+    margin-bottom: 70px;
   }
-  .reviews__swiper-button-next {
-    position: relative;
-    width: 60px;
-    height: 18px;
-    right: -30%;
+  .contact__questions {
+    width: 47%;
+  }
+  .contact__input {
+    margin-bottom: 12px;
   }
   .footer {
     background-color: #FCF8F0;
-    padding: 70px 0;
-  }
-  .footer-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 30px 0;
   }
   .footer__contact {
-    font-size: 22px;
+    font-size: 18px;
   }
   .footer__contact-item {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
   .footer__contact-item:last-child {
     margin-bottom: 0;
   }
-  .footer__logo {
-    width: 220px;
+  .footer__contact__logo {
+    width: 180px;
   }
   .footer__social {
     width: 130px;
