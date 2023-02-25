@@ -1,5 +1,5 @@
 .advantages
-  padding-top: 160px
+  padding: 160px 0
   &__title
     font-style: normal
     font-weight: 400
@@ -10,13 +10,16 @@
     margin-bottom: 60px
     color: $text-color
   &__info
-    display: flex
-    justify-content: space-between
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
   &__card
-    width: 386px
+    width: 100%
     &-image
       width: 100%
       margin-bottom: 25px
+      &--media
+        display: none
     &-title
       font-family: 'Inter'
       font-style: normal
@@ -29,4 +32,5 @@
       font-weight: 400
       font-size: 17px
       line-height: 150%
+      opacity: 0.6
     
