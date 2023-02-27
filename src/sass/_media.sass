@@ -5,12 +5,15 @@
     &__wrapper
       max-height: 70px
       margin-bottom: 70px
+      max-width: 100%
+      justify-content: space-between
     &__logo
       width: 130px
     &__navigation
       &-item
         font-size: 20px
         line-height: 20px
+        white-space: nowrap
     &__shopping
       width: 20px
   .banner 
@@ -240,9 +243,11 @@
         height: 30px
 @media (max-width: 980px)
   .container
-      width: 729px
+    width: 729px
+    margin: auto
   .header
     &__wrapper
+      width: 100%
       margin-bottom: 75px
     &__navigation
       display: none
@@ -269,7 +274,7 @@
         margin-bottom: 0
   .banner
     &__about
-      min-width: 100%
+      max-width: 100%
       padding-top: 0
       padding-bottom: 100px
       &-title
@@ -322,8 +327,252 @@
       &-text
         font-size: 17px
         line-height: 150%
+  .products
+    &__cards
+      display: none
+    &__swiper
+      display: block
+      width: 100%
+      overflow: hidden
+    &__card
+      &-image
+        width: 100%
+        height: 400px
+        object-fit: cover
+    &__button
+      display: none
+    &__pagination
+      display: flex
+      justify-content: center
+      position: relative
+      margin-top: 40px
+      white-space: nowrap
+  .swiper
+    &-slide 
+      width: 281px
+    &-pagination
+      position: relative
+      max-width: 240px
+      margin: 0
+      &-bullet
+        width: 50px
+        height: 4px
+        background-color: $primary 
+        border-radius: 0px
+        margin-left: 0
+        margin-right: 10px
+      &:last-child
+        margin-left: 0
+  .reviews
+    margin-bottom: 68px
+    &__title
+      font-size: 40px
+      line-height: 43px
+      margin-bottom: 50px
+    &__text
+      margin: auto
+      width: 50%
+      &::after 
+        left: 80%
+        width: 174px
+        height: 174px
+      &-feedback
+        font-size: 17px
+        line-height: 150%
+    &__swiper
+      &-button
+        display: none
+    &__image
+      width: 312px
+      overflow: hidden
+      flex-basis: auto
+      &-image
+        display: none
+      &-media
+        display: block
+        width: 100%
+    &__pagination
+      display: flex
+      position: relative
+      margin-top: 40px
+      justify-content: center
+      white-space: nowrap
+  .contact 
+    &__title
+      margin-bottom: 50px
+    &__wrapper
+      flex-direction: column
+      align-items: start
+    &__questions
+      padding: 47px 20px 
+      width: 97%
+      &-title
+        margin-top: 0
+        margin-bottom: 40px
+    &__image
+      width: 100%
+      order: -5
+    &__input
+      margin-bottom: 27px
+      &-name
+        flex-basis: 28%
+        font-size: 17px
+        line-height: 18px
+      &-email
+        flex-basis: 68%
+        font-size: 17px
+        line-height: 18px
+      &-message
+        font-size: 17px
+        line-height: 18px
+    &__button
+      left: 90%
+      bottom: 65px
+  .footer
+    &__logo
+      width: 180px
+@media (max-width: 768px)
+  .container
+    max-width: 90%
+    margin: auto
+  .header
+    &__wrapper
+      margin-bottom: 35px
+  .banner
+    &__showcase
+      display: block
+      width: 220px
+      height: 315px
+      order: -10
+      margin: auto
+    &__about
+      padding-bottom: 35px
+      &-garden
+        display: none
+      &-title
+        flex-wrap: wrap
+        &-dark
+          margin-bottom: 10px
+          font-size: 48px
+          line-height: 52px
+        &-primary
+          margin-bottom: 20px
+          font-size: 48px
+          line-height: 52px
+      &-text
+        width: 100%
+        font-size: 17px
+        line-height: 150%
+    &__buttons
+      &-reservation
+        margin-bottom: 20px
+  .buttons
+    margin-bottom: 0
+  .button
+    width: 100%
+  .wrapper
+    display: flex
+    flex-direction: column
+  .advantages
+    padding: 50px 0
+    &__title
+      margin-bottom: 35px
+      font-size: 28px
+      line-height: 30px
+    &__card
+      &-image
+        display: block
+        &--media
+          display: none
+  .grow
+    &__title
+      margin-bottom: 40px
+    &__image 
+      width: 100%
+  .products
+    padding: 50px 0
+    &__title
+      margin-bottom: 35px
+      font-size: 28px
+      line-height: 30px
+  .reviews
+    &__title
+      margin-bottom: 35px
+      font-size: 28px
+      line-height: 30px
+    &__slider
+      flex-direction: column
+    &__image
+      order: -10
+      width: 100%
+      &-image
+        display: block
+      &-media
+        display: none
+    &__text
+      width: 100%
+      padding: 20px
+      &-name
+        float: left
+        margin-bottom: 38px
+  .contact
+    &__title
+      margin-bottom: 35px
+      font-size: 28px
+      line-height: 30px
+    &__questions
+      padding: 20px
+    &__input
+      margin-bottom: 20px
+      &-name
+        flex-basis: 100%
+        font-size: 17px
+        line-height: 18px
+        margin-bottom: 15px
+      &-email
+        flex-basis: 100%
+        font-size: 17px
+        line-height: 18px
+        margin-bottom: 15px
+      &-message
+        font-size: 17px
+        line-height: 18px
+        margin-bottom: 15px
+    &__button
+      left: 82%
+      bottom: 47px  
+  .footer
+    padding: 35px 0
+    &__contact
+      &-item 
+        font-size: 15px
+        line-height: 100%
+    &__logo
+      width: 100px
+    &__social
+      width: 80px
+      &-follows
+        font-size: 15px
+        line-height: 100%
+        margin-bottom: 10px
+      &-facebook
+        width: 20px
+        height: 20px
+      &-twitter
+        width: 20px
+        height: 20px
+      &-telegram
+        width: 20px
+        height: 20px
 
 
+
+
+
+
+
+
+      
 
       
 

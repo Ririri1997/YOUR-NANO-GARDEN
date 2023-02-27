@@ -611,6 +611,9 @@ template {
   opacity: 0.6;
   margin-bottom: 0;
 }
+.products__swiper {
+  display: none;
+}
 .products__button {
   background-color: #6E7547;
   color: #FFFFFF;
@@ -651,6 +654,9 @@ template {
 .reviews__image-image {
   width: 100%;
 }
+.reviews__image-media {
+  display: none;
+}
 .reviews__text {
   margin-left: 67px;
   width: 526px;
@@ -679,11 +685,13 @@ template {
 }
 .reviews__text-name {
   float: right;
-  margin-left: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 150%;
+}
+.reviews__pagination {
+  display: none;
 }
 .reviews__swiper {
   width: 100%;
@@ -861,6 +869,8 @@ template {
   .header__wrapper {
     max-height: 70px;
     margin-bottom: 70px;
+    max-width: 100%;
+    justify-content: space-between;
   }
   .header__logo {
     width: 130px;
@@ -868,6 +878,7 @@ template {
   .header__navigation-item {
     font-size: 20px;
     line-height: 20px;
+    white-space: nowrap;
   }
   .header__shopping {
     width: 20px;
@@ -1165,8 +1176,10 @@ template {
 @media (max-width: 980px) {
   .container {
     width: 729px;
+    margin: auto;
   }
   .header__wrapper {
+    width: 100%;
     margin-bottom: 75px;
   }
   .header__navigation {
@@ -1197,7 +1210,7 @@ template {
     margin-bottom: 0;
   }
   .banner__about {
-    min-width: 100%;
+    max-width: 100%;
     padding-top: 0;
     padding-bottom: 100px;
   }
@@ -1262,5 +1275,303 @@ template {
   .advantages__card-text {
     font-size: 17px;
     line-height: 150%;
+  }
+  .products__cards {
+    display: none;
+  }
+  .products__swiper {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+  .products__card-image {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .products__button {
+    display: none;
+  }
+  .products__pagination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+    white-space: nowrap;
+  }
+  .swiper-slide {
+    width: 281px;
+  }
+  .swiper-pagination {
+    position: relative;
+    max-width: 240px;
+    margin: 0;
+  }
+  .swiper-pagination-bullet {
+    width: 50px;
+    height: 4px;
+    background-color: #6E7547;
+    border-radius: 0px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .swiper-pagination:last-child {
+    margin-left: 0;
+  }
+  .reviews {
+    margin-bottom: 68px;
+  }
+  .reviews__title {
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 50px;
+  }
+  .reviews__text {
+    margin: auto;
+    width: 50%;
+  }
+  .reviews__text::after {
+    left: 80%;
+    width: 174px;
+    height: 174px;
+  }
+  .reviews__text-feedback {
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .reviews__swiper-button {
+    display: none;
+  }
+  .reviews__image {
+    width: 312px;
+    overflow: hidden;
+    flex-basis: auto;
+  }
+  .reviews__image-image {
+    display: none;
+  }
+  .reviews__image-media {
+    display: block;
+    width: 100%;
+  }
+  .reviews__pagination {
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .contact__title {
+    margin-bottom: 50px;
+  }
+  .contact__wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact__questions {
+    padding: 47px 20px;
+    width: 97%;
+  }
+  .contact__questions-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .contact__image {
+    width: 100%;
+    order: -5;
+  }
+  .contact__input {
+    margin-bottom: 27px;
+  }
+  .contact__input-name {
+    flex-basis: 28%;
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .contact__input-email {
+    flex-basis: 68%;
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .contact__input-message {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .contact__button {
+    left: 90%;
+    bottom: 65px;
+  }
+  .footer__logo {
+    width: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+  .header__wrapper {
+    margin-bottom: 35px;
+  }
+  .banner__showcase {
+    display: block;
+    width: 220px;
+    height: 315px;
+    order: -10;
+    margin: auto;
+  }
+  .banner__about {
+    padding-bottom: 35px;
+  }
+  .banner__about-garden {
+    display: none;
+  }
+  .banner__about-title {
+    flex-wrap: wrap;
+  }
+  .banner__about-title-dark {
+    margin-bottom: 10px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .banner__about-title-primary {
+    margin-bottom: 20px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .banner__about-text {
+    width: 100%;
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .banner__buttons-reservation {
+    margin-bottom: 20px;
+  }
+  .buttons {
+    margin-bottom: 0;
+  }
+  .button {
+    width: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages {
+    padding: 50px 0;
+  }
+  .advantages__title {
+    margin-bottom: 35px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .advantages__card-image {
+    display: block;
+  }
+  .advantages__card-image--media {
+    display: none;
+  }
+  .grow__title {
+    margin-bottom: 40px;
+  }
+  .grow__image {
+    width: 100%;
+  }
+  .products {
+    padding: 50px 0;
+  }
+  .products__title {
+    margin-bottom: 35px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .reviews__title {
+    margin-bottom: 35px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .reviews__slider {
+    flex-direction: column;
+  }
+  .reviews__image {
+    order: -10;
+    width: 100%;
+  }
+  .reviews__image-image {
+    display: block;
+  }
+  .reviews__image-media {
+    display: none;
+  }
+  .reviews__text {
+    width: 100%;
+    padding: 20px;
+  }
+  .reviews__text-name {
+    float: left;
+    margin-bottom: 38px;
+  }
+  .contact__title {
+    margin-bottom: 35px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .contact__questions {
+    padding: 20px;
+  }
+  .contact__input {
+    margin-bottom: 20px;
+  }
+  .contact__input-name {
+    flex-basis: 100%;
+    font-size: 17px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .contact__input-email {
+    flex-basis: 100%;
+    font-size: 17px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .contact__input-message {
+    font-size: 17px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .contact__button {
+    left: 82%;
+    bottom: 47px;
+  }
+  .footer {
+    padding: 35px 0;
+  }
+  .footer__contact-item {
+    font-size: 15px;
+    line-height: 100%;
+  }
+  .footer__logo {
+    width: 100px;
+  }
+  .footer__social {
+    width: 80px;
+  }
+  .footer__social-follows {
+    font-size: 15px;
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+  .footer__social-facebook {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__social-twitter {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__social-telegram {
+    width: 20px;
+    height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
