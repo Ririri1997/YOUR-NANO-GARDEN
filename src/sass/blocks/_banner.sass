@@ -32,6 +32,7 @@
     position: relative
     left: 161px
     top: 61px
+    z-index: -7
     &-image
       position: relative
       left: 0
@@ -49,11 +50,13 @@
   &-detail
    color: $primary
   &__showcase
-    position: relative
+    position: absolute
     width: 446px
     height: 639px
+    right: 0
+    top: 0
     &-image
-      position: relative
+      position: absolute
       width: 100%
       object-fit: cover
       top: 0

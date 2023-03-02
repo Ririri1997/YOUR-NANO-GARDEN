@@ -1,0 +1,85 @@
+.modal
+  display: none
+  &__overlay
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.6)
+    z-index: 100
+    // visibility: hidden
+    transition: opacity 0.2s
+  &__dialog
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 1010px
+    width: 95%
+    height: 386px
+    background-color: #FFFFFF
+    transform: translate(-50%, -50%)
+    z-index: 101
+  &__close
+    position: absolute
+    right: 16px
+    top: 16px
+    text-decoration: none
+    cursor: pointer
+  &__card
+    &-image
+      position: absolute
+      width: 386px
+      height: 386px
+      left: 0
+      top: 0
+      bottom: 0
+    &-info
+      display: flex
+      margin-left: 446px
+      flex-direction: column
+    &-title
+      font-weight: 400
+      font-size: 40px
+      line-height: 43px
+      color: $text-color
+      margin-bottom: 30px
+      margin-top: 54px
+    &-text
+      font-family: 'Inter'
+      font-style: normal
+      font-weight: 400
+      font-size: 20px
+      line-height: 150%
+      width: 499px
+      opacity: 0.6
+    &-button
+      display: flex
+      align-items: center
+  &__button
+    background-color: $primary
+    color: #fff
+    height: 40px
+.product
+  &-counter
+    display: flex
+    margin-right: 20px
+.counter
+  &-button 
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40px
+    height: 40px
+    border: 1px solid $text-color
+    background-color: transparent
+    cursor: pointer
+  &-number
+    text-align: center
+    width: 40px
+    height: 40px
+    border: 1px solid $text-color
+    border-left: none
+    border-right: none
+.open
+  display: flex

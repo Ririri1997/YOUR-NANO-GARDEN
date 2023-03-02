@@ -23,7 +23,7 @@
           <li class="header__navigation-item"><a href="#" class="header__link">Contact Us</a></li>
         </ul>
         <a href="#" class="header__link"><img class="header__shopping" src="icons/shopping-bag.svg" alt="icons: shopping-bag"></a>
-        <button class=" menu-button navbar-top__menu-button">
+        <button class=" menu-button header__menu-button">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
@@ -41,8 +41,8 @@
           </div>
           <p class="banner__about-text">From seed to plant in a tiny smart garden. <br> Salads, herbs and small vegetables, grown at&nbsphome, all year round!</p>
           <div class="buttons">
-            <button class="button banner__buttons-reservation">Pre-order</button>
-            <button class="button banner__buttons-detail">Read more</button>      
+            <button class="button magnetic banner__buttons-reservation">Pre-order</button>
+            <button class="button magnetic banner__buttons-detail">Read more</button>      
           </div>
           <div class="banner__about-garden"><img src="img/garden.png" class="banner__about-garden-image" alt="garden">
           </div>
@@ -101,8 +101,8 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <a href="#" class="products__card products__card-1">
-            <img src="img/products-card/products-1.jpg" alt="image products " class="products__card-image ">
+            <a href="#" class="products__card products__card-slider-1">
+            <img src="img/products-card/products-1.jpg" alt="image products " class="products__card-image">
             <span class="products__card-name">Nano Garden TerraCotta</span>
             <span class="products__card-price">€149,99 EUR</span>
           </a></div>
@@ -147,7 +147,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="products__cards">
+      <div class="products__cards ">
           <a href="#" class="products__card products__card-1">
             <img src="img/products-card/products-1.jpg" alt="image products " class="products__card-image ">
             <span class="products__card-name">Nano Garden TerraCotta</span>
@@ -185,7 +185,7 @@
           </a>
         <!-- ./products__card -->
       </div>
-      <button class="button products__button">View all</button>
+      <button class="button magnetic products__button">View all</button>
       <!-- /.products__cards -->
     </div>
   </section>
@@ -268,7 +268,7 @@
             <input
             class="contact__input  message contact__input-message" placeholder="Message"
             name="message"></input>
-            <button class="contact__button" type="submit"></button>
+            <button class="magnetic contact__button" type="submit"></button>
         </form>
         <!-- /.contact__guestions-details -->
       </div>
@@ -305,9 +305,38 @@
         <!-- /.footer__social -->
       </div>
     </div>
-
   </footer>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="icon: close">
+      </a>
+      <div class="modal__card-image">
+        <img src="img/products-card/product-modal-1.jpg" alt="Product" class="modal__card-image">
+      </div>
+      <div class="modal__card-info">
+        <h2 class="modal__card-title">Nano Garden TerraCotta</h2>
+        <!-- /.modal__card-title -->
+        <p class="modal__card-text">Minimalist with a twist, Prêt à Pousser presents this Nano Garden, a mini connected indoor garden to enliven your living space with a tasteful flair.</p>
+        <!-- /.modal__card-text -->
+        <div class="modal__card-button">
+          <div class="product-counter">
+            <button class="counter-button minus-btn">-</button>
+            <input type="text" class="counter-number" value="1" data-max-count="20">
+            <button class="counter-button plus-btn">+</button>
+          </div>
+          <button class="magnetic button modal__button">Buy now</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js'></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
